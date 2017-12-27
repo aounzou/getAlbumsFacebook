@@ -4,5 +4,7 @@
     <color name="colorPrimaryDark">#E33942</color>
     <color name="colorAccent">#303F9F</color>
     <color name="common_border_color">#046380</color>
+    <color name="common_border">#046370</color>
+
 
 </resources>

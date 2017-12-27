@@ -8,4 +8,6 @@
     <string name="success">Success</string>
     <string name="successfully_posted_post">Post ID: %1$s</string>
     <string name="error">Error</string>
+    <string name="test">Test</string>
+
 </resources>

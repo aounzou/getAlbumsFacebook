@@ -31,7 +31,7 @@ public class LoginActivity extends AppCompatActivity {
 
             if (fragment == null) {
 
-
+//test
 
 //Generation KEY HASH
                 try {
