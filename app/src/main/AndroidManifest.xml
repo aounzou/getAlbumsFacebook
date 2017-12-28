@@ -17,6 +17,7 @@
             </intent-filter>
         </activity>
         <activity android:name="com.amine.hiddenfoundrs.idAlbums.AlbumIdActivity" ></activity>
+        <activity android:name="com.amine.hiddenfoundrs.albums.AlbumActivity" ></activity>
 
 
     <activity android:name="com.facebook.FacebookActivity"
