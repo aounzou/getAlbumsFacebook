@@ -8,6 +8,7 @@ import android.widget.AdapterView;
 import android.widget.GridView;
 import android.widget.Toast;
 
+import com.amine.hiddenfoundrs.pager.ImageViewPager;
 import com.amine.hiddenfoundrs.R;
 import com.amine.hiddenfoundrs.adapters.ImageAdapter;
 
@@ -55,7 +56,23 @@ if(idAlbums.size()==0){
         gridview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             public void onItemClick(AdapterView<?> parent, View v, int position, long id) {
 
+                // Launch ImageViewPager.java on selecting GridView Item
+                Intent i = new Intent(getApplicationContext(), ImageViewPager.class);
 
+                // Show a simple toast message for the item position
+             //   Toast.makeText(AlbumActivity.this, "" + position, Toast.LENGTH_SHORT).show();
+
+                // Send the click position to ImageViewPager.java using intent
+                i.putExtra("id", position);
+
+
+                Bundle arg=new Bundle();
+                arg.putSerializable("albumsID",(Serializable) idAlbums);
+                i.putExtra("BUNDLE",arg);
+
+
+                // Start ImageViewPager
+                startActivity(i);
             }
         });
 
